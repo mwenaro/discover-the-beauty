@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.cta-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+section {
+  position: relative;
+  max-width: 1200px;
+  width: 900px;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin-inline: auto;
+  background-image: url("../images/bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-list,
+.upper-content {
+  width: 60%;
+}
+
+.upper-content {
+  padding: 10px;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card-list .card {
+  padding: 5px;
+}
+.card-list .card img {
+  width: 25%;
+  margin-bottom: 10px;
+}
+.card-list .card p {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 4px;
+}
+
+.hero-image {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 45%;
+  overflow: hidden;
+}
+.hero-image img {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

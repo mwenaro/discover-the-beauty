@@ -1,0 +1,72 @@
+// variables
+$btnBgColor: #333;
+$btnPadding: 10px;
+
+
+// mixens
+@mixin rounded($val) {
+  border-radius: $val;
+}
+// reset styles
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+// ctb btn styles
+.cta-btn {
+  background-color: $btnBgColor;
+  color: white;
+  padding: $btnPadding calc(2 * $btnPadding);
+  //   border-radius: 10px;
+  @include rounded(20px);
+  font-weight: 700;
+}
+
+// styles for the hero section
+section {
+    position: relative;
+  max-width: 1200px;
+  width: 900px;
+  min-height: fit-content;
+  margin-inline: auto;
+  background-image: url("../images/bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  padding: $btnPadding;
+  display: flex;
+  flex-direction: column;
+//   justify-content: space-between;
+gap:20px;
+}
+.card-list,
+.upper-content {
+  width: 60%;
+ 
+}
+
+// load upper content
+@import 'upper_content';
+
+// load the card-list styles
+@import "card_list";
+
+
+// images styles
+.hero-image{
+    position: absolute;
+    top:10px;
+    right: 0px;
+    width: 45%;
+    overflow: hidden;
+   
+
+    img{
+        width: 100%;
+        
+    }
+}
